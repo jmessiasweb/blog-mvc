@@ -36,6 +36,12 @@
       }
 
 
+
+
+
+
+
+
         </style>
         <!-- Custom styles for this template -->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -46,9 +52,62 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
               integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
               crossorigin="anonymous">
+        <style>
+            body {
+            margin-top: 50px;
+            }
+
+
+
+        </style>
 
     </head>
-<body>
-    <h1>Cadastrar-se</h1>
+<body class="container">
+<div class="card">
+    <div class="card-body">
+        <div class="jumbotron text-center">
+            <h1>Cadastre-se</h1>
+        </div>
+
+        <form action="index.html" th:action="@{/signup}" method="post">
+
+            <div class="row">
+                <div class="form-group col-6">
+                    <label>Nome</label>
+                    <input type="text" name="name" class="form-control" aoufocus >
+                </div>
+
+                <div class="form-group col-6">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" >
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-6">
+                    <label>Senha</label>
+                    <input type="password" name="password" class="form-control" >
+                </div>
+
+                <div class="form-group col-6">
+                    <label>Confirma Senha</label>
+                    <input type="password" name="confirmaPassword" class="form-control" >
+
+                </div>
+            </div>
+
+            <hr>
+            <button class="btn btn-primary">
+                <i class="fa fa-save"></i> Salvar
+            </button>
+            <button class="btn btn-secondary float-right" type="submit">
+                <i class="far fa-window-close"></i> Cancelar
+            </button>
+
+        </form>
+
+    </div>
+</div>
 </body>
 </html>
