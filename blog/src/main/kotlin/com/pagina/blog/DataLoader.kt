@@ -44,14 +44,22 @@ class DataLoader(
 
     private fun loadUser() {
         if (userRepository.count() == 0L) {
-            val user = User(
-                name = "Administrador",
-                email = "admin@blog.com",
-                password = "password"
-            )
-            userRepository.save(user).also { logger.info(it.toString()) }
+
+            listOf(
+                User(
+                    name = "Administrator",
+                    email = "admin@blog.com",
+                    password = "admin"
+                ),
+                User(
+                    name = "Fabiano",
+                    email = "fabiano@blog.com",
+                    password = "123"
+                )
+            ).also { userRepository.saveAll(it) }
         }
     }
+
     private fun loadArticles() {
         if (articleRepository.count() == 0L) {
             val categoryTechnology = categoryRepository.findAll().get(0)
