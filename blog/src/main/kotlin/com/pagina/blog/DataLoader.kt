@@ -68,11 +68,17 @@ class DataLoader(
                 listOf(
                     Author(
                         user = userRepository.findAll().get(0),
-                        about = "When an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        about = "When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                        facebook = "http://facebook.com/administrator",
+                        twitter = "http://twitter.com/administrator",
+                        linkedIn = "http://linkedIn.com/administrator"
                     ),
                     Author(
                         user = userRepository.findAll().get(1),
-                        about = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        about = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                        facebook = "http://facebook.com/teste",
+                        twitter = "http://twitter.com/teste",
+                        linkedIn = "http://linkedIn.com/teste"
                     )
                 )
             )

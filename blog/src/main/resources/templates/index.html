@@ -176,18 +176,18 @@
                 </h4>
                 <ol class="list-unstyled">
                     <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i> Facebook
+                        <a href="#" th:href="${author.facebook}">
+                            <i class="fab fa-facebook-f"></i> <span class="text-secondary" th:text="${author.facebook}"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i> Twitter
+                        <a href="#" th:href="${author.twitter}">
+                            <i class="fab fa-twitter"></i> <span class="text-secondary" th:text="${author.twitter}"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        <a href="#" th:href="${author.linkedIn}">
+                            <i class="fab fa-linkedin-in"></i> <span class="text-secondary" th:text="${author.linkedIn}"></span>
                         </a>
                     </li>
                 </ol>
