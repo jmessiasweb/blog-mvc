@@ -18,5 +18,8 @@ data class Article(
     var date: LocalDateTime = LocalDateTime.now(),
 
     @ManyToOne
-    var author: Author = Author()
+    var author: Author = Author(),
+
+    @ManyToOne
+    var category: Category = Category()
 )
