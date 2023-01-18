@@ -88,14 +88,16 @@ class DataLoader(
                     subTitle = "industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                     content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
                     date = LocalDateTime.now(),
-                    author = authors.get(0)
+                    author = authors.get(0),
+                    category = categoryTechnology
                 ),
                 Article(
                     title = "There are many variations of passages of Lorem Ipsum available",
                     subTitle = "or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything",
                     content = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
                     date = LocalDateTime.now(),
-                    author = authors.get(1)
+                    author = authors.get(1),
+                    category = categoryWorld
                 )
             ).also { articleRepository.saveAll(it) }
         }
